@@ -24,3 +24,5 @@ authors
 --------
 
 Álison Fernandes  | [DementedVice.wordpress.com/about](http://dementedvice.wordpress.com/about/)
+
+Hugo Ruivo | [LinkedIn](http://pt.linkedin.com/in/hruivo89) | [HRuivoPortfolio.wordpress.com](http://hruivoportfolio.wordpress.com/)
