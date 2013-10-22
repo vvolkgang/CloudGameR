@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14, 20.75" name="CloudGameR_DB">
+  <DataContextMoniker Name="/CloudGameR_DBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f05957d0-d86c-41d3-9916-1bf94219508b" absoluteBounds="11.75, 9.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Aluguer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c3e6de4-cd63-4fe9-baae-ea06e2280627" absoluteBounds="11.765, 9.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8c60c00-2bab-405d-9fb6-1c108fc28a11" absoluteBounds="3.5, 9.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Utilizador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1662c0d5-88e5-4fce-ac15-5f0cb750c495" absoluteBounds="3.515, 10.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" absoluteBounds="9, 7.875, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Aquisicao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2124243c-a029-473f-a598-6eb9b87ff352" absoluteBounds="9.015, 8.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5a29e69-0e30-487b-bf2a-53de8f37de50" absoluteBounds="6.25, 13.125, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Contacto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec32a08e-03e2-49d4-8b84-2d046d11c4a3" absoluteBounds="6.265, 13.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9ae9b6d-dade-4bb5-8270-03c8ef0ea742" absoluteBounds="3.5, 5.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Criadora" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5dd0ee5-402f-4582-ab64-91d36102f385" absoluteBounds="3.515, 5.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dc70726-6329-45bd-bb4f-e61bbd07ec7e" absoluteBounds="3.5, 7.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Editora" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffa51694-9178-4c15-8959-c7e59eff88fc" absoluteBounds="3.515, 8.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2cd1d82e-bdb6-4562-a962-ba94783072a3" absoluteBounds="6.25, 16.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Factura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb5b6c79-496b-430a-9db4-db6ffb169951" absoluteBounds="6.265, 16.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c14e7de0-8722-4eaf-a3a4-18d696f84f37" absoluteBounds="3.5, 3.5, 2, 1.193992513020834">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Genero" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de816dbb-480a-4d28-a70d-bfc2d55999e8" absoluteBounds="3.515, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c97abd6-87af-448e-94b4-45989a7b9b54" absoluteBounds="6.25, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Idioma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="391c0693-1ad1-4482-82c8-e2401d7a0ee0" absoluteBounds="6.265, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="937ef2e2-9e4e-44e9-8cc6-f839bbce9479" absoluteBounds="9, 5.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/IdiomaJogo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd2eaa38-ef3f-4cb5-aefb-2dcf38b498fc" absoluteBounds="9.015, 6.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bb033a0-bb3e-434b-9f55-23e423499c7e" absoluteBounds="9, 11.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Imagem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc34b81b-1980-47c3-8eb2-d23f9d013f7a" absoluteBounds="9.015, 11.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="058ca5cf-2d3b-4374-8721-c695ba060289" absoluteBounds="3.5, 16.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/IVA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10093416-11fb-4a0c-b076-de5a365e3343" absoluteBounds="3.515, 16.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fef57146-0959-4403-808d-4e20d49bc601" absoluteBounds="6.25, 5.875, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Jogo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42946e33-b87b-4981-a509-80fb1972ce5a" absoluteBounds="6.265, 6.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7749be03-e0e0-44fe-93a1-5c556321fee4" absoluteBounds="0.75, 8.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Pai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e43ac48f-2c29-4f1c-aab6-04bb68548126" absoluteBounds="0.765, 8.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83fccc2e-11db-4d35-9c8b-77e1609a0b0c" absoluteBounds="6.25, 10.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Preferencia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="599493ea-c31c-49de-ba23-adb42ef28703" absoluteBounds="6.265, 10.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3fbd929-17ec-4526-ae9d-6672f46155ca" absoluteBounds="3.5, 13.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/Rate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de56158c-517b-47c7-8038-962114b51a62" absoluteBounds="3.515, 13.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="505b2afd-7b96-4318-8d93-a17a08df7290" absoluteBounds="11.75, 6.875, 2, 1.5785953776041657">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/RegistoUtilizacao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f80ca60-7de1-4d7b-91c5-260d56f9a449" absoluteBounds="11.765, 7.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6482c77b-0db0-43aa-9d32-fd3f9d5c99b8" absoluteBounds="6.25, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/TipoAquisicao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="931d0e68-6858-4539-826f-0f138455d2d4" absoluteBounds="6.265, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e078e01-fc3f-42fc-b231-da3ca6c96ad0" absoluteBounds="3.5, 19.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CloudGameR_DBDataContext/TipoContacto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b05aa4a1-2cbe-42b1-9b70-659e03df6ca7" absoluteBounds="3.515, 19.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 9.48159912109375); (11.75 : 9.48159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Aquisicao/Aquisicao_Aluguer" />
+      <nodes>
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+        <classShapeMoniker Id="f05957d0-d86c-41d3-9916-1bf94219508b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 9.75); (4.5 : 9.2612939453125); (5.79166666666667 : 9.2612939453125 : JumpStart); (5.95833333333333 : 9.2612939453125 : JumpEnd); (5.97916666666667 : 9.2612939453125 : JumpStart); (6.14583333333333 : 9.2612939453125 : JumpEnd); (8.625 : 9.2612939453125); (8.625 : 8.85659912109375); (8.72916666666667 : 8.85659912109375 : JumpStart); (8.98958333333333 : 8.85659912109375 : JumpEnd); (9 : 8.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Utilizador/Utilizador_Aquisicao" />
+      <nodes>
+        <classShapeMoniker Id="a8c60c00-2bab-405d-9fb6-1c108fc28a11" />
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.9054996744792); (5.875 : 12.2804996744792); (5.875 : 13.8181469726562); (6.25 : 13.8181469726562)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Utilizador/Utilizador_Contacto" />
+      <nodes>
+        <classShapeMoniker Id="a8c60c00-2bab-405d-9fb6-1c108fc28a11" />
+        <classShapeMoniker Id="d5a29e69-0e30-487b-bf2a-53de8f37de50" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 16.1868490375601); (8.8125 : 15.6243490375601); (8.8125 : 8.33454756054688); (8.82291666666667 : 8.33454756054688 : JumpStart); (8.98958333333333 : 8.33454756054688 : JumpEnd); (9 : 8.33454756054688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Factura/Factura_Aquisicao" />
+      <nodes>
+        <classShapeMoniker Id="2cd1d82e-bdb6-4562-a962-ba94783072a3" />
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.34699625651042); (8.82291666666667 : 4.34699625651042 : JumpStart); (8.98958333333333 : 4.34699625651042 : JumpEnd); (10 : 4.34699625651042); (10 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Idioma/Idioma_IdiomaJogo" />
+      <nodes>
+        <classShapeMoniker Id="6c97abd6-87af-448e-94b4-45989a7b9b54" />
+        <classShapeMoniker Id="937ef2e2-9e4e-44e9-8cc6-f839bbce9479" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 16.8181469726563); (5.82291666666667 : 16.8181469726563 : JumpStart); (5.98958333333333 : 16.8181469726563 : JumpEnd); (6.25 : 16.8181469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/IVA/IVA_Factura" />
+      <nodes>
+        <classShapeMoniker Id="058ca5cf-2d3b-4374-8721-c695ba060289" />
+        <classShapeMoniker Id="2cd1d82e-bdb6-4562-a962-ba94783072a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.62962648209635); (8.72916666666667 : 8.62962648209635 : JumpStart); (8.98958333333333 : 8.62962648209635 : JumpEnd); (9 : 8.62962648209635)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Jogo/Jogo_Aquisicao" />
+      <nodes>
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.40949625651042); (8.82291666666667 : 6.40949625651042 : JumpStart); (8.98958333333333 : 6.40949625651042 : JumpEnd); (9 : 6.40949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Jogo/Jogo_IdiomaJogo" />
+      <nodes>
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+        <classShapeMoniker Id="937ef2e2-9e4e-44e9-8cc6-f839bbce9479" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.73816594210737); (8.56607443490112 : 9.05424037700849 : JumpStart); (8.68392556509888 : 9.17209150720625 : JumpEnd); (8.6875 : 9.17566594210737); (8.6875 : 12.1931469726562); (8.72916666666667 : 12.1931469726562 : JumpStart); (8.89583333333333 : 12.1931469726562 : JumpEnd); (9 : 12.1931469726562)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Jogo/Jogo_Imagem" />
+      <nodes>
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+        <classShapeMoniker Id="3bb033a0-bb3e-434b-9f55-23e423499c7e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.38064697265625); (5.79166666666667 : 6.38064697265625 : JumpStart); (6.11458333333333 : 6.38064697265625 : JumpEnd); (6.25 : 6.38064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Criadora/Criadora_Jogo" />
+      <nodes>
+        <classShapeMoniker Id="b9ae9b6d-dade-4bb5-8270-03c8ef0ea742" />
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.21235270182292); (5.79166666666667 : 8.21235270182292 : JumpStart); (5.95833333333333 : 8.21235270182292 : JumpEnd); (5.97916666666667 : 8.21235270182292 : JumpStart); (6.14583333333333 : 8.21235270182292 : JumpEnd); (6.25 : 8.21235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Editora/Editora_Jogo" />
+      <nodes>
+        <classShapeMoniker Id="3dc70726-6329-45bd-bb4f-e61bbd07ec7e" />
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.64255798938301); (6.03125 : 5.17380798938301); (6.03125 : 7.29649983723958); (6.25 : 7.29649983723958)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Genero/Genero_Jogo" />
+      <nodes>
+        <classShapeMoniker Id="c14e7de0-8722-4eaf-a3a4-18d696f84f37" />
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.31899251302083); (1.75 : 10.8277498372396); (3.5 : 10.8277498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Pai/Pai_Utilizador" />
+      <nodes>
+        <classShapeMoniker Id="7749be03-e0e0-44fe-93a1-5c556321fee4" />
+        <classShapeMoniker Id="a8c60c00-2bab-405d-9fb6-1c108fc28a11" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.125); (1.75 : 6.19314697265625); (3.5 : 6.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Pai/Pai_Criadora" />
+      <nodes>
+        <classShapeMoniker Id="7749be03-e0e0-44fe-93a1-5c556321fee4" />
+        <classShapeMoniker Id="b9ae9b6d-dade-4bb5-8270-03c8ef0ea742" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.56814697265625); (3.5 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Pai/Pai_Editora" />
+      <nodes>
+        <classShapeMoniker Id="7749be03-e0e0-44fe-93a1-5c556321fee4" />
+        <classShapeMoniker Id="3dc70726-6329-45bd-bb4f-e61bbd07ec7e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.48071242863582 : 4.69399251302083); (5.875 : 5.08828008438502); (5.875 : 9.875); (6.00357443490112 : 10.0035744349011 : JumpStart); (6.12142556509888 : 10.1214255650989 : JumpEnd); (6.25 : 10.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Genero/Genero_Preferencia" />
+      <nodes>
+        <classShapeMoniker Id="c14e7de0-8722-4eaf-a3a4-18d696f84f37" />
+        <classShapeMoniker Id="83fccc2e-11db-4d35-9c8b-77e1609a0b0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.8782487565104); (5.97916666666667 : 10.8782487565104 : JumpStart); (6.14583333333333 : 10.8782487565104 : JumpEnd); (6.25 : 10.8782487565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Utilizador/Utilizador_Preferencia" />
+      <nodes>
+        <classShapeMoniker Id="a8c60c00-2bab-405d-9fb6-1c108fc28a11" />
+        <classShapeMoniker Id="83fccc2e-11db-4d35-9c8b-77e1609a0b0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.5619285109675); (5.81607443490112 : 13.2458540760664 : JumpStart); (5.93392556509888 : 13.1280029458687 : JumpEnd); (6.0625 : 12.9994285109675); (6.0625 : 7.75442626953125); (6.25 : 7.75442626953125)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Rate/Rate_Jogo" />
+      <nodes>
+        <classShapeMoniker Id="c3fbd929-17ec-4526-ae9d-6672f46155ca" />
+        <classShapeMoniker Id="fef57146-0959-4403-808d-4e20d49bc601" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.16429768880208); (11.75 : 8.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/Aquisicao/Aquisicao_RegistoUtilizacao" />
+      <nodes>
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+        <classShapeMoniker Id="505b2afd-7b96-4318-8d93-a17a08df7290" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.41276401652644); (8.90625 : 3.06901401652644); (8.90625 : 9.54974559375); (9 : 9.54974559375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/TipoAquisicao/TipoAquisicao_Aquisicao" />
+      <nodes>
+        <classShapeMoniker Id="6482c77b-0db0-43aa-9d32-fd3f9d5c99b8" />
+        <classShapeMoniker Id="721eaf39-59b9-4c1b-a220-c9ad3c1560ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 19.2812264964944); (5.90625 : 18.8749764964944); (5.90625 : 14.1959724589844); (6.25 : 14.1959724589844)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CloudGameR_DBDataContext/TipoContacto/TipoContacto_Contacto" />
+      <nodes>
+        <classShapeMoniker Id="7e078e01-fc3f-42fc-b231-da3ca6c96ad0" />
+        <classShapeMoniker Id="d5a29e69-0e30-487b-bf2a-53de8f37de50" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

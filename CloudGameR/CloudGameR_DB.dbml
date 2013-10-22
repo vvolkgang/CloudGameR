@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CloudGameR" Class="CloudGameR_DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NOMAD\NOSILASQL;Initial Catalog=CloudGameR;Integrated Security=True" SettingsObjectName="CloudGameR.Properties.Settings" SettingsPropertyName="CloudGameRConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Aluguer" Member="Aluguers">
+    <Type Name="Aluguer">
+      <Column Name="TempoAdquirido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Validade" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Aquisicao_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Aluguer_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Aquisicao_Aluguer" Member="Aquisicao" ThisKey="Aquisicao_ID" OtherKey="Aquisicao_ID" Type="Aquisicao" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utilizador" Member="Utilizadors">
+    <Type Name="Utilizador">
+      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Pass" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Morada" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Referral" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pais_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Utilizador_Aquisicao" Member="Aquisicaos" ThisKey="User_ID" OtherKey="User_ID" Type="Aquisicao" />
+      <Association Name="Utilizador_Contacto" Member="Contactos" ThisKey="User_ID" OtherKey="User_ID" Type="Contacto" />
+      <Association Name="Utilizador_Preferencia" Member="Preferencias" ThisKey="User_ID" OtherKey="User_ID" Type="Preferencia" />
+      <Association Name="Pai_Utilizador" Member="Pai" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Pai" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Aquisicao" Member="Aquisicaos">
+    <Type Name="Aquisicao">
+      <Column Name="Aquisicao_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Factura_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Custo_Total" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Jogo_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TipoAquisicao_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Aquisicao_Aluguer" Member="Aluguers" ThisKey="Aquisicao_ID" OtherKey="Aquisicao_ID" Type="Aluguer" />
+      <Association Name="Aquisicao_RegistoUtilizacao" Member="RegistoUtilizacaos" ThisKey="Aquisicao_ID" OtherKey="Aquisicao_ID" Type="RegistoUtilizacao" />
+      <Association Name="Utilizador_Aquisicao" Member="Utilizador" ThisKey="User_ID" OtherKey="User_ID" Type="Utilizador" IsForeignKey="true" />
+      <Association Name="Factura_Aquisicao" Member="Factura" ThisKey="Factura_ID" OtherKey="Factura_ID" Type="Factura" IsForeignKey="true" />
+      <Association Name="Jogo_Aquisicao" Member="Jogo" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="Jogo" IsForeignKey="true" />
+      <Association Name="TipoAquisicao_Aquisicao" Member="TipoAquisicao" ThisKey="TipoAquisicao_ID" OtherKey="TipoAquisicao_ID" Type="TipoAquisicao" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contacto" Member="Contactos">
+    <Type Name="Contacto">
+      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TipoContacto_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Contacto" Member="Contacto1" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Utilizador_Contacto" Member="Utilizador" ThisKey="User_ID" OtherKey="User_ID" Type="Utilizador" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TipoContacto_Contacto" Member="TipoContacto" ThisKey="TipoContacto_ID" OtherKey="TipoContacto_ID" Type="TipoContacto" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Criadora" Member="Criadoras">
+    <Type Name="Criadora">
+      <Column Name="Criadora_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Pais_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Criadora_Jogo" Member="Jogos" ThisKey="Criadora_ID" OtherKey="Criadora_ID" Type="Jogo" />
+      <Association Name="Pai_Criadora" Member="Pai" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Pai" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Editora" Member="Editoras">
+    <Type Name="Editora">
+      <Column Name="Editora_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Pais_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Editora_Jogo" Member="Jogos" ThisKey="Editora_ID" OtherKey="Editora_ID" Type="Jogo" />
+      <Association Name="Pai_Editora" Member="Pai" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Pai" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Factura" Member="Facturas">
+    <Type Name="Factura">
+      <Column Name="IVA_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Factura_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Factura_Aquisicao" Member="Aquisicaos" ThisKey="Factura_ID" OtherKey="Factura_ID" Type="Aquisicao" />
+      <Association Name="IVA_Factura" Member="IVA" ThisKey="IVA_ID" OtherKey="IVA_ID" Type="IVA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Genero" Member="Generos">
+    <Type Name="Genero">
+      <Column Name="Genero_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Genero" Member="Genero1" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Genero_Jogo" Member="Jogos" ThisKey="Genero_ID" OtherKey="Genero_ID" Type="Jogo" />
+      <Association Name="Genero_Preferencia" Member="Preferencias" ThisKey="Genero_ID" OtherKey="Genero_ID" Type="Preferencia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Idioma" Member="Idiomas">
+    <Type Name="Idioma">
+      <Column Name="Idioma_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Idioma" Member="Idioma1" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Idioma_IdiomaJogo" Member="IdiomaJogos" ThisKey="Idioma_ID" OtherKey="Idioma_ID" Type="IdiomaJogo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IdiomaJogo" Member="IdiomaJogos">
+    <Type Name="IdiomaJogo">
+      <Column Name="Idioma_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Jogo_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Idioma_IdiomaJogo" Member="Idioma" ThisKey="Idioma_ID" OtherKey="Idioma_ID" Type="Idioma" IsForeignKey="true" />
+      <Association Name="Jogo_IdiomaJogo" Member="Jogo" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="Jogo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Imagem" Member="Imagems">
+    <Type Name="Imagem">
+      <Column Name="Imagem_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Endereco" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Jogo_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Jogo_Imagem" Member="Jogo" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="Jogo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IVA" Member="IVAs">
+    <Type Name="IVA">
+      <Column Name="IVA_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Data_Inicio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="IVA_Factura" Member="Facturas" ThisKey="IVA_ID" OtherKey="IVA_ID" Type="Factura" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Jogo" Member="Jogos">
+    <Type Name="Jogo">
+      <Column Name="Jogo_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_Lancamento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Preco_Base" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Taxa_Aluguer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Rate_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Editora_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Criadora_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Genero_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Capa_Endereco" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Jogo_Aquisicao" Member="Aquisicaos" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="Aquisicao" />
+      <Association Name="Jogo_IdiomaJogo" Member="IdiomaJogos" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="IdiomaJogo" />
+      <Association Name="Jogo_Imagem" Member="Imagems" ThisKey="Jogo_ID" OtherKey="Jogo_ID" Type="Imagem" />
+      <Association Name="Criadora_Jogo" Member="Criadora" ThisKey="Criadora_ID" OtherKey="Criadora_ID" Type="Criadora" IsForeignKey="true" />
+      <Association Name="Editora_Jogo" Member="Editora" ThisKey="Editora_ID" OtherKey="Editora_ID" Type="Editora" IsForeignKey="true" />
+      <Association Name="Genero_Jogo" Member="Genero" ThisKey="Genero_ID" OtherKey="Genero_ID" Type="Genero" IsForeignKey="true" />
+      <Association Name="Rate_Jogo" Member="Rate" ThisKey="Rate_ID" OtherKey="Rate_ID" Type="Rate" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pais" Member="Pais">
+    <Type Name="Pai">
+      <Column Name="Pais_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Pai_Utilizador" Member="Utilizadors" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Utilizador" />
+      <Association Name="Pai_Criadora" Member="Criadoras" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Criadora" />
+      <Association Name="Pai_Editora" Member="Editoras" ThisKey="Pais_ID" OtherKey="Pais_ID" Type="Editora" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Preferencia" Member="Preferencias">
+    <Type Name="Preferencia">
+      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Genero_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Genero_Preferencia" Member="Genero" ThisKey="Genero_ID" OtherKey="Genero_ID" Type="Genero" IsForeignKey="true" />
+      <Association Name="Utilizador_Preferencia" Member="Utilizador" ThisKey="User_ID" OtherKey="User_ID" Type="Utilizador" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rate" Member="Rates">
+    <Type Name="Rate">
+      <Column Name="Rate_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Idade_Min" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Idade_Max" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Rate_Jogo" Member="Jogos" ThisKey="Rate_ID" OtherKey="Rate_ID" Type="Jogo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RegistoUtilizacao" Member="RegistoUtilizacaos">
+    <Type Name="RegistoUtilizacao">
+      <Column Name="RegistoUtilizacao_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataInicio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataFim" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Aquisicao_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Aquisicao_RegistoUtilizacao" Member="Aquisicao" ThisKey="Aquisicao_ID" OtherKey="Aquisicao_ID" Type="Aquisicao" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoAquisicao" Member="TipoAquisicaos">
+    <Type Name="TipoAquisicao">
+      <Column Name="TipoAquisicao_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoAquisicao_Aquisicao" Member="Aquisicaos" ThisKey="TipoAquisicao_ID" OtherKey="TipoAquisicao_ID" Type="Aquisicao" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoContacto" Member="TipoContactos">
+    <Type Name="TipoContacto">
+      <Column Name="TipoContacto_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="TipoContacto_Contacto" Member="Contactos" ThisKey="TipoContacto_ID" OtherKey="TipoContacto_ID" Type="Contacto" />
+    </Type>
+  </Table>
+</Database>
